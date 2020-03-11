@@ -1,4 +1,4 @@
-FROM wehkamp/alpine:3.5
+FROM alpine:3.7
 
 ENTRYPOINT ["python", "-m", "exporter"]
 EXPOSE 9199
@@ -13,4 +13,4 @@ RUN LAYER=build \
 
 ADD ./exporter /exporter
 
-LABEL container.name=wehkamp/prometheus-cloudflare-exporter:1.1.1
+LABEL container.name=justereseau/prometheus-cloudflare-exporter:2.0.0
